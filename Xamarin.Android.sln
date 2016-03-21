@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Location.Droid", "Location.Droid\Location.Droid.csproj", "{9A51C841-A2F9-4872-B4BF-6967EF24014D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationDemo", "LocationDemo\LocationDemo.csproj", "{82BA6FBA-0FC6-47C0-A30A-18056BB0AC1A}"
+EndProject
 Global
 	GlobalSection(Performance) = preSolution
 		HasPerformanceSessions = true
@@ -20,6 +22,12 @@ Global
 		{9A51C841-A2F9-4872-B4BF-6967EF24014D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A51C841-A2F9-4872-B4BF-6967EF24014D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9A51C841-A2F9-4872-B4BF-6967EF24014D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{82BA6FBA-0FC6-47C0-A30A-18056BB0AC1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82BA6FBA-0FC6-47C0-A30A-18056BB0AC1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82BA6FBA-0FC6-47C0-A30A-18056BB0AC1A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{82BA6FBA-0FC6-47C0-A30A-18056BB0AC1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82BA6FBA-0FC6-47C0-A30A-18056BB0AC1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82BA6FBA-0FC6-47C0-A30A-18056BB0AC1A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
