@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("CardView.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("CustomRowView.Resource", IsApplication=true)]
 
-namespace CardView
+namespace CustomRowView
 {
 	
 	
@@ -41,11 +41,48 @@ namespace CardView
 			}
 		}
 		
+		public partial class Color
+		{
+			
+			// aapt resource value: 0x7f040000
+			public const int cellback = 2130968576;
+			
+			static Color()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Color()
+			{
+			}
+		}
+		
 		public partial class Drawable
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int Bulbs = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int CustomSelector = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int FlowerBuds = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int Fruits = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int Icon = 2130837508;
+			
+			// aapt resource value: 0x7f020005
+			public const int Legumes = 2130837509;
+			
+			// aapt resource value: 0x7f020006
+			public const int Tubers = 2130837510;
+			
+			// aapt resource value: 0x7f020007
+			public const int Vegetables = 2130837511;
 			
 			static Drawable()
 			{
@@ -60,11 +97,20 @@ namespace CardView
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f050003
+			public const int Image = 2131034115;
+			
+			// aapt resource value: 0x7f050004
+			public const int List = 2131034116;
+			
 			// aapt resource value: 0x7f050000
-			public const int randPickButton = 2131034112;
+			public const int Text = 2131034112;
 			
 			// aapt resource value: 0x7f050001
-			public const int recyclerView = 2131034113;
+			public const int Text1 = 2131034113;
+			
+			// aapt resource value: 0x7f050002
+			public const int Text2 = 2131034114;
 			
 			static Id()
 			{
@@ -80,7 +126,10 @@ namespace CardView
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int CustomView = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int HomeScreen = 2130903041;
 			
 			static Layout()
 			{
@@ -88,25 +137,6 @@ namespace CardView
 			}
 			
 			private Layout()
-			{
-			}
-		}
-		
-		public partial class String
-		{
-			
-			// aapt resource value: 0x7f040001
-			public const int ApplicationName = 2130968577;
-			
-			// aapt resource value: 0x7f040000
-			public const int Hello = 2130968576;
-			
-			static String()
-			{
-				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			}
-			
-			private String()
 			{
 			}
 		}
