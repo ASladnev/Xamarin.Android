@@ -13,7 +13,7 @@ namespace StockService
     public bool _isBound = false;
     public StockServiceBinder _binder;
     StockServiceConnection _stockServiceConnection;
-    StockReceiver _stockReceiver;
+    private StockReceiver _stockReceiver;
     Intent _stockServiceIntent;
 
     protected override void OnCreate (Bundle bundle)
@@ -55,7 +55,6 @@ namespace StockService
       } else {
         Console.WriteLine ("alarm already set");
       }
-
     }
 
     bool IsAlarmSet ()

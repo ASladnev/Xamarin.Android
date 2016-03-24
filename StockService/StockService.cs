@@ -7,6 +7,7 @@ using System.Net;
 using System.Json;
 using System.Linq;
 using Android.Util;
+using Android.Runtime;
 
 namespace StockService
 {
@@ -32,12 +33,18 @@ namespace StockService
       return _binder;
     }
 
-    public List <Stock> GetStocks ()
+    public List<Stock> GetStocks ()
     {
       return _stocks;
     }
 
-    List<Stock> UpdateStocks (List<string> symbols)
+
+    //public override StartCommandResult OnStartCommand (Intent intent, [GeneratedEnum] StartCommandFlags flags, int startId)
+    //{
+    //  return base.OnStartCommand (intent, flags, startId);
+    //}
+
+    private List<Stock> UpdateStocks (List<string> symbols)
     {
       List<Stock> results = null;
       var array = symbols.ToArray ();
@@ -46,7 +53,7 @@ namespace StockService
         "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20(%22{0}%22)%0A%09%09&diagnostics=false&format=json&env=http%3A%2F%2Fdatatables.org%2Falltables.env",
        symbolsString);
 
-      var httpRequest = (HttpWebRequest)HttpWebRequest.Create (new Uri (uri));
+      var httpRequest = (HttpWebRequest)WebRequest.Create (new Uri (uri));
       try {
         using (var httpResponse = (HttpWebResponse)httpRequest.GetResponse ()) {
           var response = httpResponse.GetResponseStream ();
